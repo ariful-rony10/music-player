@@ -9,16 +9,16 @@ const title = document.querySelector('#title')
 const cover = document.querySelector('#music-cover')
 
 // Song title
-const songs = ['hey', 'summer', 'ukulele']
+const songs = ['BANG-Soulker', 'Circle-ninjabeats', 'INFECTED-LeviticusBeatz', 'ShadowBlunt-ninjabeats']
 // Keep track of the song
-let songIndex = 2;
+let songIndex = 0;
 // Initially load song into the dom
 loadSong(songs[songIndex])
 // Update song details
 function loadSong(song) {
     title.innerText = song
     audio.src = `musics/${song}.mp3`;
-    cover.src = `images/${song}.jpeg`;
+    cover.src = `images/${song}.jpg`;
 }
 function playSong() {
     musicContainer.classList.add('play')
